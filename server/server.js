@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/Employee')
+mongoose.connect('mongodb+srv://rssanjaykaviya:2324@cluster0.qo8pfme.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         console.log("DB Connected successfully");
     })
