@@ -20,7 +20,7 @@ export default function AdminLogin(){
     };
     if(email=='admin@example.com'){
     try {
-      const response = await axios.post('http://localhost:5000/login', data);
+      const response = await axios.post('https://mernapp-1goj.onrender.com/login', data);
       console.log(response.data); 
 
       if (response.data.success) {
