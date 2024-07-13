@@ -12,7 +12,7 @@ export default function LoggedInContent(){
     <nav class="navbar">
       <ul>
         <li><Link to="/Home" class="nav-link">Home</Link></li>
-        <li><a href="#">Profile</a></li>
+        <li><Link to="/Profile" class="nav-link">Profile</Link></li>
       </ul>
     </nav>
   
