@@ -11,7 +11,7 @@ export default function LoggedInContent(){
   
     <nav class="navbar">
       <ul>
-        <li><a href="http://localhost:3000/home">Home</a></li>
+        <li><Link to="/Home" class="nav-link">Home</Link></li>
         <li><a href="#">Profile</a></li>
       </ul>
     </nav>
