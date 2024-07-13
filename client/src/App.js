@@ -11,11 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-<<<<<<< HEAD
-      <Route path="/" element={<Home />} /> 
-=======
+      <Route path="/" element={<Home />} />
      <Route path="/" element={<Home />} /> 
->>>>>>> f9e1a8a5733c0bfd3803ed3bcc305a7fd77266dd
+
         <Route path="/Home" element={<Home />} />  
         <Route path="/register" element={<Register />} />
         <Route path="/displayUsers" element={<DisplayUsers/>}/>  
