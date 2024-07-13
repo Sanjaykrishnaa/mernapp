@@ -10,7 +10,7 @@ export default function UpdateUsers(){
    const navigate = useNavigate()
 
    useEffect(()=>{
-      axios.get('http://localhost:5000/getUser/'+id)
+      axios.get('https://mernapp-1goj.onrender.com/getUser/'+id)
       .then(result => {
          console.log(result)
          setName(result.data.name)
@@ -22,7 +22,7 @@ export default function UpdateUsers(){
 
    const handleUpdate = (event)=>{
       event.preventDefault()
-      axios.put('http://localhost:5000/updateUser/'+id, {name,email})
+      axios.put('https://mernapp-1goj.onrender.com/updateUser/'+id, {name,email})
             .then(result => {
                 console.log(result.data)
                 navigate('/displayUsers')
