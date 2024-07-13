@@ -9,7 +9,7 @@ export default function DisplayUsers() {
         useEffect(()=>{
             const fetchUsers = async()=>{
                 try{
-                    const response = await axios.post('http://localhost:5000/displayUsers')
+                    const response = await axios.post('https://mernapp-1goj.onrender.com/displayUsers')
                     setUsers(response.data)
                 }catch(err){
                     console.error('Error Fetching Users: ',err)
@@ -22,7 +22,7 @@ export default function DisplayUsers() {
 
 
     const handleDelete = async(userId) =>{
-        axios.delete('http://localhost:5000/deleteUser/'+userId)
+        axios.delete('https://mernapp-1goj.onrender.com/deleteUser/'+userId)
         .then(result=>setUsers(result.data))
         .catch(err =>console.log(err))
     }
